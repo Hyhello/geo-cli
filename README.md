@@ -3,19 +3,19 @@
 ## 安装步骤
 
 ``` bash
-cnpm install -g @cestc/geo-cli --registry=http://whnpm.cestc.cn/registry/
+cnpm install -g @hyhello/geo-cli
 ```
 
 ## 更新步骤
 
 ``` bash
-cnpm install -g @cestc/geo-cli@latest --registry=http://whnpm.cestc.cn/registry
+cnpm install -g @hyhello/geo-cli@latest
 ```
 
 ## 删除步骤
 
 ``` bash
-npm uninstall -g @cestc/geo-cli --registry=http://whnpm.cestc.cn/registry
+npm uninstall -g @hyhello/geo-cli
 ```
 
 ## 使用步骤

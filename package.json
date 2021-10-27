@@ -1,6 +1,6 @@
 {
-    "name": "@cestc/geo-cli",
-    "version": "0.0.1",
+    "name": "@hyhello/geo-cli",
+    "version": "0.0.2",
     "description": "Engineering tool based on geojason performance optimization.",
     "main": "bin/geo.js",
     "bin": {
@@ -11,7 +11,9 @@
     },
     "keywords": [
         "geo",
-        "geo-cli"
+        "geo-cli",
+        "echarts",
+        "@hyhello/geo-cli"
     ],
     "author": "Hyhello",
     "license": "ISC",
