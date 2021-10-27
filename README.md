@@ -3,19 +3,19 @@
 ## 安装步骤
 
 ``` bash
-cnpm install -g @hyhello/geo-cli
+npm install -g @hyhello/geo-cli
 ```
 
 ## 更新步骤
 
 ``` bash
-cnpm install -g @hyhello/geo-cli@latest
+npm install -g @hyhello/geo-cli@latest
 ```
 
 ## 删除步骤
 
 ``` bash
-cnpm uninstall -g @hyhello/geo-cli
+npm uninstall -g @hyhello/geo-cli
 ```
 
 ## 使用步骤
