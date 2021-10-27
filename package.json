@@ -1,0 +1,38 @@
+{
+    "name": "@cestc/geo-cli",
+    "version": "0.0.1",
+    "description": "Engineering tool based on geojason performance optimization.",
+    "main": "bin/geo.js",
+    "bin": {
+        "geo": "./bin/geo.js"
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "keywords": [
+        "geo",
+        "geo-cli"
+    ],
+    "author": "Hyhello",
+    "license": "ISC",
+    "engines": {
+        "node": ">=7.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/Hyhello/geo-cli/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hyhello/geo-cli.git"
+    },
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "child_process": "^1.0.2",
+        "commander": "^8.1.0",
+        "fs-extra": "^10.0.0",
+        "glob": "^7.2.0",
+        "inquirer": "^8.2.0",
+        "ora": "^5.4.1",
+        "semver": "^7.3.5"
+    }
+}
