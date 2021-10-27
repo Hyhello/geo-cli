@@ -15,7 +15,7 @@ cnpm install -g @hyhello/geo-cli@latest
 ## 删除步骤
 
 ``` bash
-npm uninstall -g @hyhello/geo-cli
+cnpm uninstall -g @hyhello/geo-cli
 ```
 
 ## 使用步骤
