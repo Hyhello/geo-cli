@@ -1,6 +1,6 @@
 {
     "name": "@hyhello/geo-cli",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Engineering tool based on geojson performance optimization.",
     "main": "bin/geo.js",
     "bin": {
