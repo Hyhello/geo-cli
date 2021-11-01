@@ -2,7 +2,7 @@
 
 Engineering tool based on GeoJson performance optimization.
 
-Read this document in: [简体中文](https://github.com/Hyhello/geo-cli/master/docs/README.zh_CN.md).
+Read this document in: [简体中文](https://github.com/Hyhello/geo-cli/master/README.zh_CN.md).
 
 ## Installation
 
