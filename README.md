@@ -46,7 +46,7 @@ node examples/demo.json
 
 <a name="usage"></a>
 
-> **Note:** Please install @hyhello/cli first before npx geo, you can also drop it inside of an npm run script or you may instead execute with the relative path instead. ./node_modules/.bin/geo
+> **Note:** Please install @hyhello/geo-cli first before npx geo, you can also drop it inside of an npm run script or you may instead execute with the relative path instead. ./node_modules/.bin/geo
 
 ```Shell
 npx geo demo.json
