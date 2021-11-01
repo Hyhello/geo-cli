@@ -33,8 +33,6 @@ After that finishes installing, your package.json file should include:
 
 ## Examples (Run it and see it)
 
-<a name="examples"></a>
-
 Check out the [`examples/`](https://github.com/Hyhello/geo-cli/tree/master/examples) folder for code and interface examples.
 
 ```Shell
@@ -43,8 +41,6 @@ node examples/demo.json
 ```
 
 ## Usage
-
-<a name="usage"></a>
 
 > **Note:** Please install @hyhello/geo-cli first before npx geo, you can also drop it inside of an npm run script or you may instead execute with the relative path instead. ./node_modules/.bin/geo
 
@@ -99,10 +95,10 @@ npx geo --input examples --recursive
 
 ### relative
 
-If you --output is a folder, and you don't want to keep the previous directory structure, you can use --relative
+If you --output is a folder, and you don't want to keep the previous directory structure, you can use --no-relative
 
 ```Shell
-npx geo --input examples --relative false
+npx geo --input examples --on-relative
 ```
 
 ### emptyDir

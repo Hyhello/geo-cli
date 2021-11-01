@@ -94,10 +94,10 @@ npx geo --input examples --recursive
 
 ### relative
 
-如果--input是一个文件夹, 而您不想保留以前的目录结构，可以使用 --relative
+如果--input是一个文件夹, 而您不想保留以前的目录结构，可以使用 --on-relative
 
 ```Shell
-npx geo --input examples --relative false
+npx geo --input examples --on-relative
 ```
 
 ### emptyDir
