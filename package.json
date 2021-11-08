@@ -1,41 +1,43 @@
 {
-    "name": "@hyhello/geo-cli",
-    "version": "0.1.1",
-    "description": "Engineering tool based on geojson performance optimization.",
-    "main": "bin/geo.js",
-    "bin": {
-        "geo": "./bin/geo.js"
-    },
-    "directories": {
-        "lib": "lib"
-    },
-    "keywords": [
-        "geo",
-        "geo-cli",
-        "echarts",
-        "@hyhello/geo-cli"
-    ],
-    "author": "Hyhello",
-    "license": "MIT",
-    "engines": {
-        "node": ">=7.0.0"
-    },
-    "bugs": {
-        "url": "https://github.com/Hyhello/geo-cli/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Hyhello/geo-cli.git"
-    },
-    "dependencies": {
-        "chalk": "^4.1.2",
-        "child_process": "^1.0.2",
-        "commander": "^8.1.0",
-        "fs-extra": "^10.0.0",
-        "glob": "^7.2.0",
-        "inquirer": "^8.2.0",
-        "ora": "^5.4.1",
-        "semver": "^7.3.5",
-        "v8-compile-cache": "^2.3.0"
-    }
+  "name": "@hyhello/geo-cli",
+  "version": "0.1.2",
+  "description": "Engineering tool based on geojson performance optimization.",
+  "main": "bin/geo.js",
+  "bin": {
+    "geo": "bin/geo.js"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "keywords": [
+    "geo",
+    "geo-cli",
+    "echarts",
+    "@hyhello/geo-cli"
+  ],
+  "author": "Hyhello",
+  "license": "MIT",
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Hyhello/geo-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyhello/geo-cli.git"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "commander": "^8.1.0",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.2.0",
+    "inquirer": "^8.2.0",
+    "ora": "^5.4.1",
+    "semver": "^7.3.5",
+    "v8-compile-cache": "^2.3.0"
+  },
+  "homepage": "https://github.com/Hyhello/geo-cli#readme"
 }
