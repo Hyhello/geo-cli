@@ -148,5 +148,5 @@ npx geo --help
 --version or -v
 
 ```Shell
-npx geo --help
+npx geo --version
 ```
