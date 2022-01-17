@@ -1,6 +1,6 @@
 {
   "name": "@hyhello/geo-cli",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "Engineering tool based on geojson performance optimization.",
   "main": "bin/geo",
   "bin": {
@@ -31,6 +31,7 @@
     "url": "git+https://github.com/Hyhello/geo-cli.git"
   },
   "dependencies": {
+    "@hyhello/utils": "^1.1.0",
     "chalk": "^4.1.2",
     "child_process": "^1.0.2",
     "commander": "^8.1.0",
