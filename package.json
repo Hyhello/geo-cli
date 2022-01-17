@@ -31,7 +31,7 @@
     "url": "git+https://github.com/Hyhello/geo-cli.git"
   },
   "dependencies": {
-    "@hyhello/utils": "^1.1.0",
+    "@hyhello/utils": "^1.2.0",
     "chalk": "^4.1.2",
     "child_process": "^1.0.2",
     "commander": "^8.1.0",

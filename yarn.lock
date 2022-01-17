@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@hyhello/utils@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@hyhello/utils/-/utils-1.1.0.tgz#0fb0021caddf210a57a7950c471f70a9c3c2bc49"
-  integrity sha512-k3SreGW5V2YkV2LjEEO9jZE7QGsvQUsSRVcS/ZMv/N9DJ2RDguiVdJUG97rQjLbsYO8/fge/IYwEb/fODHZrNA==
+"@hyhello/utils@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@hyhello/utils/-/utils-1.2.0.tgz#e38555d43ede7ed9122ec48f37c5c5e047b425f1"
+  integrity sha512-l1czz++BdUZKNnfQXOjzSeVbVH98hN+xfV5elqd8cNFquQbyqAX23nKvUDX98JIGOvNUqtQhRwXiyJekSQpaLg==
 
 ansi-escapes@^4.2.1:
   version "4.3.2"
