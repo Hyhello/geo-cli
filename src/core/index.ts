@@ -4,7 +4,7 @@ const compile = require('./compile');
 const parseArgv = require('./parseArgv');
 const init = require('../commands/init');
 
-module.exports = function apply (args, opts, command) {
+export default function apply (args, opts, command) {
     // 执行命令
     if (opts.init) {
         init();

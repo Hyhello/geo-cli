@@ -1,10 +1,10 @@
 #! /usr/bin/env node
 
-const path = require('path');
-const fs = require('fs-extra');
-const encodeGeo = require('./zigZag');
-const { toFixed } = require('@hyhello/utils');
-const { error, succeed, ensureDir } = require('../utils');
+import * as path from 'path';
+import * as fs from 'fs-extra';
+import encodeGeo from './zigZag';
+import { toFixed } from '@hyhello/utils';
+import { error, succeed, ensureDir } from '../utils';
 
 // 获取文件size
 const fileSize = function (dir) {

@@ -1,10 +1,10 @@
 #! /usr/bin/env node
 
-const fs = require('fs-extra');
-const inquirer = require('inquirer');
-const { execSync } = require('child_process');
-const { error, succeed, underline, checkPathExists } = require('../utils');
-const { configPath, promptConfig, DEFAULT_CONFIG_FILE_NAME } = require('../config');
+import * as fs from 'fs-extra';
+import * as inquirer from 'inquirer';
+import { execSync } from 'child_process';
+import { error, succeed, underline, checkPathExists } from '../utils';
+import { configPath, promptConfig, DEFAULT_CONFIG_FILE_NAME } from '../config';
 
 // 创建配置文件
 const createConfigFile = (jsonObj) => {

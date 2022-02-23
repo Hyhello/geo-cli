@@ -2,7 +2,8 @@
 
 require('v8-compile-cache');
 
-const Service = require('../lib/service');
-const service = new Service();
+const Service = require('../lib/service').default;
 
-service.run(process.argv.slice(2))
+const serve = new Service();
+
+serve.run(process.argv.slice(2))

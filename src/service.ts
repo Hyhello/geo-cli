@@ -1,9 +1,12 @@
 #! /usr/bin/env node
-const fs = require('fs');
-const apply = require('./core');
-const program = require('commander');
+
+import * as fs from 'fs';
+import apply from './core';
+import { Command } from 'commander';
 const { error, checkNodeVersion } = require('./utils');
 const { packageInfo, optionConfig } = require('./config');
+
+const program = new Command();
 
 // 设置默认命令
 const setupDefaultCommands = () => {

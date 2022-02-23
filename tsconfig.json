@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "ES2015",
+        "module": "commonjs",
+        "importHelpers": true,
+        "removeComments": true,
+        "allowJs": false,
+        "strict": true,
+        "outDir": "src"
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "bin",
+        "examples",
+        "node_modules"
+    ]
+}

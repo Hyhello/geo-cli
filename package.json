@@ -6,6 +6,11 @@
   "bin": {
     "geo": "bin/geo"
   },
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "lint": "tsc --noEmit"
+  },
   "homepage": "https://github.com/Hyhello/geo-cli#readme",
   "directories": {
     "example": "examples",
@@ -41,5 +46,11 @@
     "ora": "^5.4.1",
     "semver": "^7.3.5",
     "v8-compile-cache": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.19",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
   }
 }
