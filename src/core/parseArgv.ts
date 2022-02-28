@@ -1,11 +1,12 @@
 #! /usr/bin/env node
 
-const glob = require('glob');
-const path = require('path');
-const { oneOf, isEmpty, compact } = require('@hyhello/utils');
-const { error, isDirectory, loadConfig, checkPathExists } = require('../utils');
+import * as path from 'path';
+import * as glob from 'fast-glob';
+import { oneOf, isEmpty, compact } from '@hyhello/utils';
+import { error, isDirectory, loadConfig, checkPathExists } from '../utils';
 
-const SUFFIX = '.json';
+// 扩展名 ext
+const SUFFIX: string = '.json';
 
 // 解析参数
 const parseArgv = (args, opts, command) => {
@@ -114,4 +115,4 @@ const parseArgv = (args, opts, command) => {
     return config;
 };
 
-module.exports = parseArgv;
+export default parseArgv;

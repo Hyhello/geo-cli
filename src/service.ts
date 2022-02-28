@@ -3,8 +3,8 @@
 import * as fs from 'fs';
 import apply from './core';
 import { Command } from 'commander';
-const { error, checkNodeVersion } = require('./utils');
-const { packageInfo, optionConfig } = require('./config');
+import { error, checkNodeVersion } from './utils';
+import { packageInfo, optionConfig } from './config';
 
 const program = new Command();
 
@@ -26,6 +26,8 @@ const setupDefaultCommands = () => {
 const registerOptions = () => {
     optionConfig.forEach(opt => {
         const args = [opt.argv, opt.description, opt.format, opt.default].filter(arg => !!arg);
+        // TODO: 暂时想到比较好的解决办法，所以采用ts-ignore
+        // @ts-ignore
         program.option(...args);
     });
     program.action(apply);
@@ -42,4 +44,4 @@ class Service {
     }
 }
 
-module.exports = Service;
+export default Service;

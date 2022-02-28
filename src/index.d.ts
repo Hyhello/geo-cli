@@ -1,8 +1,8 @@
 interface IOptionConfig {
     argv: string;
     description: string;
+    format?: (...args: any[]) => any;
     default?: string;
-    format?: (...args: any[]) => any
 }
 
 interface IPromptConfig {
@@ -11,3 +11,14 @@ interface IPromptConfig {
     message: string;
     filter?: (...args: any[]) => any
 }
+
+interface IGeo {
+    input: string | string[];
+    output: string | string[];
+    pretty: boolean | number;
+    exclude: string[]
+}
+
+interface ILogs {
+    [propName: string]: string
+};

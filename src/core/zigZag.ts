@@ -3,14 +3,14 @@
  * 此文件是echarts的编码算法
  */
 
-const path = require('path');
+import * as path from 'path';
 
- function quantize(val) {
+ function quantize(val: number): number {
 	return Math.ceil(val * 1024);
 }
 
 // 算法
-function encode(val, prev) {
+function encode(val: number, prev: number): string {
 	val = quantize(val);
 	val -= prev;
 	if (((val << 1) ^ (val >> 15)) + 64 === 8232) {
@@ -125,4 +125,4 @@ const decodeGeo = function (json) {
     });
 }
 
-module.exports = encodeGeo;
+export default encodeGeo;

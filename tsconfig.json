@@ -7,7 +7,7 @@
         "removeComments": true,
         "allowJs": false,
         "strict": true,
-        "outDir": "src"
+        "outDir": "lib"
     },
     "include": [
         "src"

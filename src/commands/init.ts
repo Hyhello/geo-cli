@@ -7,7 +7,7 @@ import { error, succeed, underline, checkPathExists } from '../utils';
 import { configPath, promptConfig, DEFAULT_CONFIG_FILE_NAME } from '../config';
 
 // 创建配置文件
-const createConfigFile = (jsonObj) => {
+const createConfigFile = (jsonObj: IGeo) => {
     const str = `module.exports = ${JSON.stringify(jsonObj, null, 2)}`;
     fs.writeFileSync(configPath, str);
 };
@@ -17,8 +17,8 @@ const init = function () {
         error(`${DEFAULT_CONFIG_FILE_NAME} 配置文件已存在！`);
         process.exit(1);
     } else {
-        inquirer.prompt(promptConfig).then(answers => {
-            delete answers.isJS;
+        inquirer.prompt(promptConfig).then((answers: IGeo) => {
+            delete (answers as any).isJS;
             createConfigFile(answers);
             // 格式化配置文件
             execSync(`npx prettier --write ${configPath}`);
@@ -30,4 +30,4 @@ const init = function () {
     }
 }
 
-module.exports = init;
+export default init;

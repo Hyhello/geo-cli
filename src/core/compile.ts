@@ -4,17 +4,17 @@ import * as path from 'path';
 import * as fs from 'fs-extra';
 import encodeGeo from './zigZag';
 import { toFixed } from '@hyhello/utils';
-import { error, succeed, ensureDir } from '../utils';
+import { error, succeed } from '../utils';
 
 // 获取文件size
-const fileSize = function (dir) {
+const fileSize = function (dir: string): string {
     const fileObj = fs.statSync(dir);
     return toFixed(fileObj.size / 1024, 2);
 }
 
-const compile = (options) => {
+const compile = (options: IGeo) => {
     let isEmpty = false;
-    const logs = [];
+    const logs: Array<ILogs> = [];
     options.input.forEach((file, index) => {
         try {
             const iBasename = path.basename(file);
@@ -37,7 +37,7 @@ const compile = (options) => {
                 '文件名': iBasename,
                 '编码前大小': inBytes + 'kb',
                 '编码后大小': outBytes + 'kb',
-                '编码比': toFixed(100 - (outBytes * 100) / inBytes, 1) + '%'
+                '编码比': toFixed(100 - (+outBytes * 100) / +inBytes, 1) + '%'
             });
             if (index === options.input.length - 1) {
                 console.table(logs);
@@ -50,4 +50,4 @@ const compile = (options) => {
     });
 };
 
-module.exports = compile;
+export default compile;

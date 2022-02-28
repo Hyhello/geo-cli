@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 
-const compile = require('./compile');
-const parseArgv = require('./parseArgv');
-const init = require('../commands/init');
+import compile from './compile';
+import parseArgv from './parseArgv';
+import init from '../commands/init';
 
 export default function apply (args, opts, command) {
     // 执行命令
